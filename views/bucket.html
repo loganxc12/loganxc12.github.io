@@ -1,0 +1,17 @@
+<div class='nav'>
+    <div class='logo'>
+        <h3>TRAVEL TIMELINE</h3>
+    </div>
+    <div class='dash-links'>
+        <a href='#/'>Log out</a>
+        <a href='#/bucket-list'>Bucket list</a>
+    </div>
+</div>
+
+<div class='dash-wrapper'>
+    <div class="header">
+        <h2>MY BUCKET LIST</h2>
+        <h4 ng-repeat='item in bucketList'> <input type='checkbox' ng-model='list.done'/><span ng-class="{'done':list.done}">{{ item.title }}</span></h4>
+        <bucket-box></bucket-box>
+    </div>
+</div> 

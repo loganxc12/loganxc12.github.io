@@ -1,0 +1,18 @@
+<name-div class='cover'>
+    <div class='cover-title'>
+        <h1>{{text.title | uppercase}}</h1>
+        <h4 ng-show='camera' ng-mouseover='toggleCoverButton()'><i ng-click='changeCover()'class="fa fa-camera"></i></h4>
+        <i id='play' class="fa fa-play-circle" ng-mouseover='togglePlayButton()'></i>
+        <div ng-show='coverButton' class='cover-edit-button' ng-click='toggleCoverForm(); toggleCoverButton()'>
+            <h5><a href=''>Edit cover image</a></h5>
+        </div>
+        <div ng-show='coverForm' class='cover-edit-form'>
+            <form ng-submit='changeCover()'>
+            <input type='text' placeholder='Enter url...' ng-model='coverUrl'/>
+            </form>
+        </div>
+        <div ng-show='playButton' class='slideshow-button' ng-mouseleave='togglePlayButton()'>
+            <h5><a href=''>Play slideshow</a></h5>
+        </div>
+    </div>
+</name-div>

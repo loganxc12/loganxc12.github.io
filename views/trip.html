@@ -1,0 +1,91 @@
+<div class='nav'>
+    <div class='logo'>
+        <h3>TRAVEL TIMELINE</h3>
+    </div>
+    <div class='dash-links'>
+        <a href='#/'>Log out</a>
+        <a href='#/bucket-list'>Bucket list</a>
+    </div>
+</div>
+
+<cover-image></cover-image>
+
+<!--
+<div class='trip-editor'>
+    <div class='plus-button'>
+        <img src='images/plus.jpg'/>
+    </div>
+</div>
+-->
+<!--
+<div class='cover'>
+    <div class='cover-title'>
+        <h1>{{text.title | uppercase}}</h1>
+        <h4 ng-show='camera' ng-mouseover='toggleCoverButton()'><i class="fa fa-camera"></i></h4>
+        <i id='play' class="fa fa-play-circle" ng-mouseover='togglePlayButton()'></i>
+        <div ng-show='coverButton' class='cover-edit-button' ng-click='toggleCoverForm(); toggleCoverButton()'>
+            <h5><a href='#'>Edit cover image</a></h5>
+        </div>
+        <div ng-show='coverForm' class='cover-edit-form'>
+            <input type='text' placeholder='Enter url...' ng-model='coverUrl'/>
+        </div>
+        <div ng-show='playButton' class='slideshow-button' ng-mouseleave='togglePlayButton()'>
+            <h5><a href='#'>Play slideshow</a></h5>
+        </div>
+    </div>
+</div>
+-->
+
+<div class='tripModules'>
+    
+    <div class='descriptionBox'>
+        <h3>Trip Description</h3>
+        <div class='upload' ng-hide='visible'>
+            <div class='description-form' ng-show='descriptionEditor'>
+                <textarea rows="7" cols="50" type='text' placeholder="Write a little something about your trip..." ng-model='tripDescription'></textarea>
+                <a ng-click='toggleDescription(); toggleEditor()' href=''>POST DESCRIPTION</a>
+            </div>
+            <br>
+            <a ng-click='toggleEditor()' href='' ng-hide='descriptionEditor'>ADD DESCRIPTION</a>
+        </div>
+        <div class='description' ng-show='visible'>
+            <p ng-click='toggleEditor(); toggleDescription()'>{{ tripDescription }}</p>
+<!--            <i ng-click='toggleDescription()' class="fa fa-pencil-square-o"></i>-->
+        </div>
+    </div>
+    
+    <div class='photoBox'>
+        <h3>Photo Gallery</h3>
+        <a href='#'>ADD PHOTOS</a>
+<!--        <input ng-model="file" type="file"></input>-->
+        
+        <div class='gallery'>
+            <img src='http://www.nationalgeographic.com/adventure/0510/photos/Jpegs/NewZealand.jpg'/>
+            <img src='http://www.aatravel.co.nz/images/v2/accommodation_carousel/Backpacker-accommodation-in-New-Zealand.jpg'/>
+            <img src='http://www.virtualoceania.net/newzealand/photos/mountains/mtcook/nz0275.jpg'/>
+            <img src='http://thesuiteworld.com/wp-content/uploads/2011/06/Hobbiton-Matamata-NewZealand-hobbit-house.jpg'/>
+            <img src='http://www.earthporm.com/wp-content/uploads/2015/06/new-zealand-scenery-129-2.jpg'/>
+            <img src='http://www.nationsencyclopedia.com/photos/new-zealand-1341.jpg'/>
+        </div>
+    </div>
+    
+</div>
+
+
+
+<!--
+<div class='dash-wrapper'>
+    <div class="description-wrapper">
+        <div class='upload' ng-hide='visible'>
+        <textarea rows="4" cols="50" type='text' placeholder="Write a little something about your trip..." ng-model='tripDescription'>   </textarea>
+        <br>
+        <a ng-click='addDescription(); toggleDescription()' href='#'>ADD DESCRIPTION</a>
+        </div>
+        <div class='description' ng-show='visible'>
+            <p>{{ tripDescription }}</p>
+            <a ng-click='toggleDescription()'><h6><i class="fa fa-pencil-square-o"></i>Edit description</h6></a>
+        </div>
+    </div>
+</div>
+-->
+

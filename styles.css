@@ -1,0 +1,694 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #1b9642;
+}
+
+.nav {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+}
+
+.nav a {
+    color: white;
+    float: right;
+    margin: auto 0;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 25px;
+    padding-right: 10px;
+}
+
+.logo {
+    margin: auto;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+}
+
+.hero {
+    width: 100%;
+    background-image: url(images/andy2.jpg);
+    background-size:cover;
+    height: 710px;
+    display: flex;
+}
+
+.nav-links {
+    position: absolute;
+    list-style-type: none;
+    right: 50px;
+    top: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links li {
+    display: inline;
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 0.08em;
+}
+.nav-links li:hover {
+    background-color: rgba(255,255,255, 0.2);
+}
+
+.title {
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.title span {
+    text-decoration: underline;
+}
+
+.title h1 {
+    margin-bottom: 50px;
+}
+
+.button {
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    background-color: #22bf54;
+    border: 2px solid #1b9642;
+    color: white;
+    padding: 18px; 
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    width: 180px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.title p a {
+    color: gray;
+    margin-top: 20px;
+}
+
+.info {
+    width: 100%;
+    height: 890px;
+    background-color: white;
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+}
+
+.info span {
+    text-decoration: underline;
+}
+
+.info i {
+    margin: 30px auto;
+    font-size: 2.5em;
+    color: #22bf54;
+}
+
+.info h1 {
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.info p {
+    font-family: 'Open Sans', sans-serif;
+    margin: 30px auto;
+    font-size: 18px;
+    line-height: 32px;
+    color: #333333;
+}
+
+.info img {
+    margin: 10px auto;
+    width: 900px;
+    height: 506px;
+    margin-bottom: 80px;
+}
+
+.pre-footer {
+    width: 100%;
+    height: 270px;
+    background-color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.pre-footer h1 {
+    margin: 40px auto;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+footer {
+    width: 100%;
+    height: 330px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer p {
+    font-family: 'Open Sans', sans-serif;
+    margin: 50px auto 30px auto;
+    font-size: 18px;
+    line-height: 32px;
+    color: #333333;
+}
+
+footer img {
+    margin: 50px 50px 15px 50px;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+}
+
+.links {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.flinks {
+    color: #333333;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 10px;
+    text-decoration: none;   
+}
+
+.flinks:hover {
+    text-decoration: underline;
+}
+/******LOGIN PAGE*****/
+
+.container {
+    width: 100%;
+    height: 90%;
+    background-image: url(images/login.jpg);
+    background-size: cover;
+    display: flex;
+}
+
+.form-content {
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    color: white;
+    text-align: center;
+}
+
+.form-content span {
+    text-decoration: underline;
+}
+
+.form-content input {
+    font-size: 1em;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-content a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #22bf54;
+    border: 2px solid #1b9642;
+    color: white;
+    padding: 15px; 
+    font-size: 0.8em;
+    width: 200px;
+}
+
+.form-content i {
+    margin: 15px 5px;
+}
+
+.form-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+}
+
+addbox {
+    cursor: pointer;
+}
+/***DASHBOARD***/
+
+.dash-links {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    font-weight: 200;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Open Sans' sans-serif;
+}
+
+.dash-links a {
+    font-size: 0.95em;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: 0.06em;
+}
+
+.dash-links a:hover {
+    text-decoration: underline;
+}
+
+.dash-wrapper {
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.header {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 70%;
+}
+
+.header h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    margin: 30px;
+}
+
+.header p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header img {
+    margin-bottom: 30px;
+}
+
+.trips {
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.trips img {
+    width: 40px;
+    height: 40px;
+    opacity: 0.4;
+    margin-top: 20px;
+}
+
+.trips a {
+    color: #1b9642;
+    display: block;
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.trips img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+.addForm {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.addForm input {
+    font-size: 1.1em;
+    font-family: 'Open Sans', sans-serif;
+    color: #4f4e4e;
+    margin-top: 10px;
+}
+
+.addForm a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #22bf54;
+    border: 2px solid #1b9642;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    color: white;
+    padding: 10px 15px; 
+    font-size: 1em;
+    margin-top: 13px;
+    letter-spacing: 0.09em;
+}
+
+/***SINGLE TRIP PAGE***/
+
+.cover {
+    width: 100%;
+    height: 635px;
+    background-image: url(images/nz.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+}
+
+.cover-title {
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+}
+
+.cover-title h4 {
+    position: absolute;
+    right: 50px;
+    bottom: 15px;
+    color: white;
+}
+
+#play {
+    position: absolute;
+    left: 45px;
+    bottom: 30px;
+    opacity: 0.7;
+    display: flex;
+    cursor: pointer;
+    font-size: 2.4em;
+}
+
+.slideshow-button {
+    position: absolute;
+    left: 30px;
+    bottom: 25px;
+    width: 250px;
+    height: 50px;
+    background-color: black;
+    border-radius: 5%;
+    opacity: 0.7;
+    display: flex;
+    cursor: pointer;
+}
+
+.slideshow-button h5 {
+    margin: auto;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+.slideshow-button a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.cover-edit-button {
+    position: absolute;
+    right: 30px;
+    bottom: 25px;
+    width: 250px;
+    height: 50px;
+    background-color: black;
+    border-radius: 5%;
+    opacity: 0.7;
+    display: flex;
+    cursor: pointer;
+}
+
+.cover-edit-button h5 {
+    margin: auto;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+.cover-edit-button a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.cover-title i {
+    font-size: 1.8em;
+    opacity: 0.6;
+}
+
+.cover-edit-form {
+    position: absolute;
+    right: 30px;
+    bottom: 25px;
+    width: 300px;
+    height: 50px;
+    background-color: black;
+    border-radius: 5%;
+    opacity: 0.7;
+    display: flex;
+    cursor: pointer;
+}
+
+.cover-edit-form form {
+    display: flex;
+}
+
+.cover-edit-form input {
+    height: 40%;
+    width: 200px;
+    margin: auto 10px;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    
+}
+
+.trip-editor {
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+
+.plus-button {
+    margin: 50px auto;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+.trip-editor img {
+    width: 40px;
+    height: 40px;
+    opacity: 0.4;
+    margin-top: auto;
+}
+
+.tripModules {
+    width: 100%;
+    height: 580px;
+    display: flex;
+}
+
+.descriptionBox {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tripModules h3 {
+    margin: 20px auto;
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.photoBox {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid #F2F2F2
+}
+
+ .photoBox a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #22bf54;
+    border: 2px solid #1b9642;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 15px; 
+    font-size: 1em;
+    margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.description {
+    color: #333333;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+}
+
+.description h6, .description a {
+    font-family: 'Open Sans', sans-serif;
+    color: #1b9642;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    cursor: pointer;
+    font-size: 0.95em;
+    margin: 0 auto;
+}
+
+.description i {
+    font-size: 1.8em;
+    margin: 0 auto;
+    color: gray;
+}
+
+.description p {
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-weight: normal;
+    line-height: 32px;
+    margin: 20px auto;
+    
+}
+
+.upload {
+    margin: 17px auto;
+    font-size: 1em;
+    text-align: center;
+}
+
+.upload a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #22bf54;
+    border: 2px solid #1b9642;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 15px; 
+    font-size: 1em;
+}
+
+textarea {
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    border: none;
+}
+
+textarea:focus {
+    outline:none;
+}
+
+.gallery {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.gallery img {
+    background-size: cover;
+    margin: auto;
+    height: 190px;
+    width: 190px;
+}
+
+/* BUCKET LIST PAGE */
+
+.header img {
+    width: 40px;
+    height: 40px;
+    opacity: 0.4;
+    margin-top: 20px;
+    margin-bottom: 0px
+}
+
+.header img:hover {
+    opacity: 1.0;
+}
+
+.header h4 {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.1em;
+    list-style-type: none;
+    margin: 5px auto;
+}
+
+.header input {
+    margin-right: 5px;
+    margin-left: -5px;
+}
+
+.done {
+    text-decoration: line-through;
+    color: #1b9642;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

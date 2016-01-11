@@ -1,0 +1,20 @@
+<div class='nav'>
+    <div class='logo'>
+        <h3>TRAVEL TIMELINE</h3>
+    </div>
+    <div class='dash-links'>
+        <a href='#/'>Log out</a>
+        <a href='#/bucket-list'>Bucket list</a>
+    </div>
+</div>
+
+<div class='dash-wrapper'>
+    <div class="header">
+        <h2>MY TRIPS</h2>
+    </div>
+    <br>
+    <div class='trips'>
+        <a ui-sref='trip({tripId: trip.id})' ng-repeat='trip in tripsArray'>{{ trip.title }}</a>
+        <add-box></add-box>
+    </div>
+</div> 
