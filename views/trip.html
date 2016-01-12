@@ -52,20 +52,23 @@
             <p ng-click='toggleEditor(); toggleDescription()'>{{ tripDescription }}</p>
 <!--            <i ng-click='toggleDescription()' class="fa fa-pencil-square-o"></i>-->
         </div>
+<!--
+        <div class='map'>
+            <img src='http://www2.wpro.who.int/internet/files/eha/toolkit/web/Country%20Profiles/New%20Zealand/Southern%20New%20Zealand.JPG' />
+        </div>
+-->
     </div>
     
     <div class='photoBox'>
         <h3>Photo Gallery</h3>
-        <a href='#'>ADD PHOTOS</a>
+        <div class='photo-adder'>
+            <input type='text' placeholder="Enter url..." ng-model='picUrl'/>
+        </div>
+        <a href='' ng-click='addPic()'>ADD PHOTO</a>
 <!--        <input ng-model="file" type="file"></input>-->
         
         <div class='gallery'>
-            <img src='http://www.nationalgeographic.com/adventure/0510/photos/Jpegs/NewZealand.jpg'/>
-            <img src='http://www.aatravel.co.nz/images/v2/accommodation_carousel/Backpacker-accommodation-in-New-Zealand.jpg'/>
-            <img src='http://www.virtualoceania.net/newzealand/photos/mountains/mtcook/nz0275.jpg'/>
-            <img src='http://thesuiteworld.com/wp-content/uploads/2011/06/Hobbiton-Matamata-NewZealand-hobbit-house.jpg'/>
-            <img src='http://www.earthporm.com/wp-content/uploads/2015/06/new-zealand-scenery-129-2.jpg'/>
-            <img src='http://www.nationsencyclopedia.com/photos/new-zealand-1341.jpg'/>
+            <a ng-repeat='pic in pics' href="{{ pic.src }}"><img ng-src='{{ pic.src }}' width="75" height="70"></a>  
         </div>
     </div>
     

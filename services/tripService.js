@@ -46,4 +46,17 @@ app.service('tripService', function(url, $firebaseArray) {
         return myTrips;
     }
     
+    var pics = [
+//        {src: "http://www.gettyimages.ca/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg"},
+//        {src: "http://www.gettyimages.ca/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg"}
+    ]
+    
+    this.getPics = function() {
+        return pics;
+    }
+    
+    this.addPic = function(picture) {
+        pics.push({src: picture});
+    }
+    
 })
