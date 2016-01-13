@@ -1,9 +1,5 @@
 app.controller('tripCtrl', function($scope, tripService, $stateParams) {
     
-//    $scope.picsGallery = [
-//        {src: "http://www.gettyimages.ca/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg"}
-//    ]
-    
     $scope.text = tripService.findTrip($stateParams.tripId);
     
     $scope.tripsArray = tripService.getTrips();
