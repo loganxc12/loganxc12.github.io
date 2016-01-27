@@ -40,7 +40,8 @@ a {
     width: 100%;
     background-image: url(images/andy2.jpg);
     background-size:cover;
-    height: 710px;
+    background-position: center;
+    height: 100vh;
     display: flex;
 }
 
@@ -113,7 +114,7 @@ a {
 
 .info {
     width: 100%;
-    height: 890px;
+    min-height: 300px;
     background-color: white;
     display: flex;
     flex-direction: column; 
@@ -147,7 +148,7 @@ a {
 }
 
 .info img {
-    margin: 10px auto;
+    margin: 0 auto;
     width: 900px;
     height: 506px;
     margin-bottom: 80px;
@@ -172,7 +173,7 @@ a {
 
 footer {
     width: 100%;
-    height: 330px;
+    min-height: 330px;
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
@@ -720,8 +721,46 @@ textarea:focus {
     color: lightgray;
 }
 
+/* MEDIA QUERIES */
 
+@media (max-width: 900px) {
+    .info img {
+        width: 600px;
+        height: 337px;
+        margin-top: 15px;
+    }
+}
 
+@media (max-width: 730px) {
+    .info img {
+        display: none;
+    }
+    .info p {
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 700px) {
+    footer br {
+        display: none;
+    }
+    footer p {
+        width: 85%;
+    }
+    .title br {
+        display: none;
+    }
+    .title {
+        width: 85%;
+        font-size: 0.9em;
+    }
+    .info br {
+        display: none;
+    }
+    .info {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
 
 
 
